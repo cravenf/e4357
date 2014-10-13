@@ -8,7 +8,7 @@ time spent: 25 minutes to enter and run strcpy() and main() with one test case, 
 
 HW01/examine a circuit board
 Tried to examine a circuit board from Nokia mobile phone but didn't have right tool to extract board from casing.
-Examined a circuit board from Ademco Vista 10 home security control unit, but the model was so old that I couldn't find any schematic for it online.  The board featured lots of capacitors and 5 chips:
+Examined a circuit board from Ademco Vista 10 home security control unit, found the wiring diagram for it online.  The board featured lots of capacitors and 5 chips:
 COP472N-3: a liquid crystal display controller
 TD62003AP: 7CH Darlington sink driver
 Pittway S9742AD: serial EEPROM
