@@ -2,10 +2,11 @@
  * Program Example 14.3:
  *  Program control registers to flash different color LEDs. LEDs connect to mbed pins 25 and 26. Switch input to pin 9.
  */
-#define MBED
+//#define MBED
 #ifdef MBED
 #include "mbed.h"
-DigitalOut myled1(LED1), myled2(LED2), myled3(LED3), myled4(LED4);
+DigitalOut redled(p5);   //define and name a digital output on pin 5
+DigitalOut greenled(p6);  //define and name a digital output on pin 6
 #endif
 void delay(float);
 
@@ -27,15 +28,15 @@ int main() {
             a=0x01;
             b=0x02;
 #ifdef MBED
-            myled1 = 1;
-            myled3 = 0;
+            redled = 1;
+            greenled = 0;
 #endif
         } else {
             a=0x02;
             b=0x01;
 #ifdef MBED
-            myled1 = 0;
-            myled3 = 1;
+            redled = 0;
+            greenled = 1;
 #endif
         }
         FIO2PIN0 |= a;
