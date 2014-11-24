@@ -4,6 +4,12 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
+23 Nov (2 hrs) - worked with Sohani at MV library on integrating Ethernet interface for project.  Connected mbed and RJ45 breakout board according to Figure 12-10 in Fast and Effective Embedded Systems Design, then connected RJ45 connector to laptop's Ethernet port via cable.  Imported EthernetInterface library by following instructions on mbed developer web site, under Cookbook (http://developer.mbed.org/cookbook/Homepage), TCP/IP Networking, Getting started with networking and mbed.  Assigned an IPv4 address to the mbed using the EthernetInterface class's init method but did not succeed in bringing up the interface via the connect method.  Tried debugging by inserting printfs in the EthernetInterface code and displaying output on Teraterm console.
+
+20 or 21 Nov - received RJ45 8-pin connector and break-out board.
+
+18 Nov (0.5hr) - ordered RJ45 8-pin connector and break-out board from SparkFun for term project.
+
 16 Nov (4hrs) - coded and tested hw6's CircularBuffer interface, adding init and deinit interfaces and a test driver; tested at several starting points in the buffer to verify wrap-around and buffer full/empty conditions.
 
 15 Nov (<1hr) - discussed project with lab partner, Sohani.  LCD we purchased is not compatible with our breadboards so we will not be able to use it.  We will move ahead instead with WebSockets.  Sohani will order a part that would enable us to connect wires from an Ethernet connector to an MBED and push sensor data from our board to a server.
