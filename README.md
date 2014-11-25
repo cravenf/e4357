@@ -4,6 +4,10 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
+25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server.
+
+24 Nov (several hours) - set up RJ45 connector with breakout board using my own mbed to replicate previous day's results.  Tried different configurations, finally connected other end of Ethernet cable directly to home router.  Was able to get DHCP-assigned IP address, but not successful in exchanging data through Ethernet socket.  RJ45 connections are too loose.
+
 23 Nov (2 hrs) - worked with Sohani at MV library on integrating Ethernet interface for project.  Connected mbed and RJ45 breakout board according to Figure 12-10 in Fast and Effective Embedded Systems Design, then connected RJ45 connector to laptop's Ethernet port via cable.  Imported EthernetInterface library by following instructions on mbed developer web site, under Cookbook (http://developer.mbed.org/cookbook/Homepage), TCP/IP Networking, Getting started with networking and mbed.  Assigned an IPv4 address to the mbed using the EthernetInterface class's init method but did not succeed in bringing up the interface via the connect method.  Tried debugging by inserting printfs in the EthernetInterface code and displaying output on Teraterm console.
 
 20 or 21 Nov - received RJ45 8-pin connector and break-out board.
