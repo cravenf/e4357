@@ -4,15 +4,13 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
-25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server:
+25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server and reflected back to mbed and displayed on Tera Term console:
 
 Websocket server
 Rapid deployment and real-time communication by Mbed
 mbed.org
 SenderChannel HomeWS Home
 Websockets Viewer on channel: sensor 
-
-
 
 message: 21 no motion
 message: 20 no motion
@@ -37,6 +35,27 @@ message: 2 no motion
 message: 1 no motion
 message: 0 no motion
 © ARM Online Tools Group        website templates by styleshout | Valid XHTML | CSS
+
+The web server reflected output back to the mbed microcontroller through the socket and the mbed displayed the received data on the Tera Term console:
+rcv'd: 253 no motion
+rcv'd: 254 no motion
+rcv'd: 255 no motion
+rcv'd: 256 MOTION
+rcv'd: 257 MOTION
+rcv'd: 258 MOTION
+rcv'd: 259 MOTION
+rcv'd: 260 MOTION
+rcv'd: 261 MOTION
+rcv'd: 262 MOTION
+rcv'd: 263 MOTION
+rcv'd: 264 MOTION
+rcv'd: 265 MOTION
+rcv'd: 266 MOTION
+rcv'd: 267 no motion
+rcv'd: 268 no motion
+rcv'd: 269 no motion
+rcv'd: 270 no motion
+Data samples are about a second apart.
 
 24 Nov (several hours) - set up RJ45 connector with breakout board using my own mbed to replicate previous day's results.  Tried different configurations, finally connected other end of Ethernet cable directly to home router.  Was able to get DHCP-assigned IP address, but not successful in exchanging data through Ethernet socket.  RJ45 connections are too loose.
 
