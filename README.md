@@ -4,7 +4,39 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
-25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server.
+25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server:
+
+Websocket server
+Rapid deployment and real-time communication by Mbed
+mbed.org
+SenderChannel HomeWS Home
+Websockets Viewer on channel: sensor 
+
+
+
+message: 21 no motion
+message: 20 no motion
+message: 19 MOTION
+message: 18 MOTION
+message: 17 MOTION
+message: 16 MOTION
+message: 15 MOTION
+message: 14 MOTION
+message: 13 MOTION
+message: 12 MOTION
+message: 11 MOTION
+message: 10 MOTION
+message: 9 MOTION
+message: 8 MOTION
+message: 7 MOTION
+message: 6 MOTION
+message: 5 no motion
+message: 4 no motion
+message: 3 no motion
+message: 2 no motion
+message: 1 no motion
+message: 0 no motion
+© ARM Online Tools Group        website templates by styleshout | Valid XHTML | CSS
 
 24 Nov (several hours) - set up RJ45 connector with breakout board using my own mbed to replicate previous day's results.  Tried different configurations, finally connected other end of Ethernet cable directly to home router.  Was able to get DHCP-assigned IP address, but not successful in exchanging data through Ethernet socket.  RJ45 connections are too loose.
 
