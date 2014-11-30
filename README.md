@@ -4,6 +4,10 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
+30 Nov (several hours) - added content to project presentation slides.
+
+29 Nov (3hrs) - debugged timestamp display with lab partner; discussed and outlined content of class presentation; discussed homework 7.
+
 25 Nov, evening (2hrs) - met with lab partner (Sohani) to integrate project work.  Our set-up in library conference room resulted in lots of false positive readings from sensor because of small size of room and proximity of components.  While Sohani devised an algorithm to average out readings, I looked into getting time of day from the mbed development environment, so human-readable time could be displayed with each sensor reading on websocket server.  We also discussed how we would present project work at the last class.
 
 25 Nov (several hours) - stripped ends of RD and TD wires at one end of Ethernet cable and plugged these directly into breadboard next to mbed RD and TD pins:  http://www.efele.net/cravenf/ucsc/e4357/project/websocket_sensor_setup.jpg.  Though not very stable, this configuration worked and enabled communication through the socket.  Exercised several embed developer programs, including TCP and UDP HelloWorld programs and programs from Effective Embedded Systems Design.  Found and modified http://developer.mbed.org/teams/mbed/code/Websocket_Ethernet_HelloWorld.  Viewed its output at http://sockets.mbed.org/demo/viewer and continued to modify the program by integrating a motion sensor and incorporating earlier code used with that.  Succeeded in reflecting motion detection to the web server and reflected back to mbed and displayed on Tera Term console:
