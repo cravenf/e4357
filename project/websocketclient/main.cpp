@@ -51,6 +51,8 @@ int main()
     
         timeRes = ntohl(*((unsigned int*)outbuf));
 //        printf("Received %d bytes from server %s on port %d: %u seconds since 1/01/1900 00:00 GMT\n\r", n, nist.get_address(), nist.get_port(), timeRes);
+        // adjust for epoch set as 1/01/1970 00:00 GMT
+        timeRes -= 2208988800L;
         p = ctime(&timeRes);
 
         myled2 = switch_ip2;
