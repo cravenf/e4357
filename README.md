@@ -6,7 +6,7 @@ This file contains a study record. Entries are in reverse chronological order.
 
 30 Nov (several hours) - added content to project presentation slides.
 
-29 Nov (3hrs) - debugged timestamp display with lab partner; discussed and outlined content of class presentation; discussed homework 7.
+29 Nov (3hrs) - Tried to follow HW7 instructions to install lua using ubuntu shell but failed to complete luarocks commands. With project partner, debugged timestamp display; discussed and outlined content of class presentation; discussed homework 7.
 
 25 Nov, evening (2hrs) - met with lab partner (Sohani) to integrate project work.  Our set-up in library conference room resulted in lots of false positive readings from sensor because of small size of room and proximity of components.  While Sohani devised an algorithm to average out readings, I looked into getting time of day from the mbed development environment, so human-readable time could be displayed with each sensor reading on websocket server.  We also discussed how we would present project work at the last class.
 
