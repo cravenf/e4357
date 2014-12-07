@@ -1,0 +1,76 @@
+BEGIN
+--------------------------------------------------------------------
+Q1: Is there any compile error with the following code (if any)?
+
+	unsigned int Arr[16];
+	3[Arr] = 7; 
+ 
+Explain:
+The code compiles.  The array Arr is uninitialized except for the fourth element.
+Expression 3[Arr] is apparently equivalent to expression Arr[3] and refers to the same element.
+
+--------------------------------------------------------------------
+Q2: What is the difference between the following 3 statements? 
+
+const int * px;   // px is a variable pointer to a constant (read-only) integer.
+int const * px;   // px is a variable pointer to a constant integer.
+int * const px;   // px is a constant pointer to a variable integer.
+
+Is there any compile error for the following cases?
+case 1:           // NO ERROR, but gcc version 4.8.3 with -Wall complains that px is set but not used
+int x = 13; 
+const int * px; 
+px = & x;
+
+case 2:           // NO ERROR, but gcc version 4.8.3 with -Wall complains that px is set but not used
+int x = 13; 
+int const * px; 
+px = & x; 
+
+case 3:           // ERROR because px is a constant (read-only) pointer and cannot be set
+int x = 13; 
+int * const px; 
+px = & x; 
+
+Explain:
+See comments next to each case statement above.
+
+--------------------------------------------------------------------
+Q3: Write a function to set or clear ith bit of a 32-bit register. 
+	Where ith (0-based) := {0, 1, 2, …, 31 } 
+void reg_set(volatile unsigned int * pReg, int i) 
+{ 
+  // verify 0 <= i <= 31, pReg is non-null and word-aligned
+  if ((i < 0) || (31 < i) || !pReg || ((int)pReg & 3))
+    return;
+  *pReg |= (1 << i);
+} 
+
+void reg_clear(volatile unsigned int * pReg, int i) 
+{ 
+  // verify 0 <= i <= 31, pReg is non-null and word-aligned
+  if ((i < 0) || (31 < i) || !pReg || ((int)pReg & 3))
+    return;
+  *pReg &= (0 << i);
+} 
+
+--------------------------------------------------------------------
+Q4: Write a swap function in C.
+void swap(unsigned int * px, unsigned int *py) { 
+  *px ^= *py;
+  *py ^= *px;
+  *px ^= *py;
+} 
+
+--------------------------------------------------------------------
+Q5:	What is the output of the following code? (Given: sizeof(unsigned int) is 4) Page 34 
+
+unsigned int Arr[16]; 
+unsigned int a0 = (unsigned int) &Arr[0]; 
+unsigned int a3 = (unsigned int) &Arr[3]; 
+printf(“%d\n”, a3 – a0); 
+
+prints 12, that is, difference between address of 4th element and address of 1st element of Arr, times sizeof(unsigned int),
+so 3 * 4
+
+END
