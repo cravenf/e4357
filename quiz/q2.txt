@@ -1,0 +1,31 @@
+BEGIN
+--------------------------------------------------------------------
+Q1: How many microcontrollers in the mbed LPC1768 board?
+
+1
+
+
+--------------------------------------------------------------------
+Q2: What is the size (in GB) of the Flash Memory ("USB Disk") of the LPC1768?
+
+.0005GB
+
+--------------------------------------------------------------------
+Q3: Name 3 functions (or features) that mbed USB cable provided:
+
+1. powers the mbed chip
+2. makes mbed microcontroller act like a USB drive
+3. can act as USB host or device
+
+--------------------------------------------------------------------
+Q4: What is the name of the Ethernet PHY chip in the mbed board (LPC1768)?
+
+don't know
+
+--------------------------------------------------------------------
+Q5: Reference LPC17xx_UM10360.pdf (Chapter 2)
+    What are the GPIO address window?
+
+
+
+END
