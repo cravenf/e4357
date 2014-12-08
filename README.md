@@ -4,6 +4,8 @@ classwork repository
 
 This file contains a study record. Entries are in reverse chronological order.
 
+6 Dec (2hrs) - reviewed quizzes; worked on quizzes 1 and 2.
+
 30 Nov (several hours) - added content to project presentation slides.
 
 29 Nov (3hrs) - Tried to follow HW7 instructions to install lua using ubuntu shell but failed to complete luarocks commands. With project partner, debugged timestamp display; discussed and outlined content of class presentation; discussed homework 7.
