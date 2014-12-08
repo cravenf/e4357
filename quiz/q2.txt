@@ -20,7 +20,7 @@ Q3: Name 3 functions (or features) that mbed USB cable provided:
 --------------------------------------------------------------------
 Q4: What is the name of the Ethernet PHY chip in the mbed board (LPC1768)?
 
-don't know
+Texas Instruments DP83848J PHYTER Mini LS Commercial Temperature Single Port 10/100 Mb/s Ethernet Transceiver
 
 --------------------------------------------------------------------
 Q5: Reference LPC17xx_UM10360.pdf (Chapter 2)
